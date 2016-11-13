@@ -123,7 +123,7 @@ export default class BarChart extends Component {
                         <G y={options.margin.top}>
                         <Text fontFamily={textStyle.fontFamily}
                         fontSize={textStyle.fontSize} fontWeight={textStyle.fontWeight} fontStyle={textStyle.fontStyle}
-                        fill={textStyle.fill} x={c.line.centroid[0]} y={chartArea.y.min} rotate={45} textAnchor="middle">{c.item.name}</Text></G>
+                        fill={textStyle.fill} x={c.line.centroid[0]} y={chartArea.y.min - 10} rotate={45} textAnchor="middle">{c.item.name}</Text></G>
                         :null}
                 </G>
             )
