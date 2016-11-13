@@ -146,11 +146,11 @@ export default class Axis extends Component {
     }
 
     let returnV = <G>
-              <G x={offset.x} y={offset.y}>
+              <G>
                 {options.showAxis ? <Path d={axis.path.print()} strokeOpacity={0.5} stroke="#3E90F0" strokeWidth={3} fill="none"/> : null}
               </G>
               {ticks}
-              <G x={offset.x} y={offset.y}>
+              <G>
                 {gridLines}
               </G>
             </G>
